@@ -1,0 +1,56 @@
+linear searching 
+
+Linear search, often known as sequential search, is the most basic search technique. In this type of search, you go through the entire list and try to fetch a match for a single element. If you find a match, then the address of the matching target element is returned. 
+
+On the other hand, if the element is not found, then it returns a NULL value. 
+
+Following is a step-by-step approach to perform Linear Search Algorithm.
+
+
+
+public class Main{
+
+  public static int linerSearch(int num[],int key){
+
+    
+
+    for(int i = 0;i<num.length;i++){
+
+      if(num[i]==key){
+
+        return i;
+
+         
+
+      }
+
+    }
+
+    return -1;
+
+  }
+
+	public static void main(String[] args) {
+
+		int num[]={2,4,6,7,2,8,9,10,5};
+
+		int key = 5;
+
+		int index = linerSearch(num,key);
+
+		if(index==-1){
+
+		  System.out.println("Not found");
+
+		}
+
+		else
+
+		System.out.println("array element at index : "+ index);
+
+	
+
+	}
+
+}
+
